@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "channels": [
+    {
+      "id": "bark-example",
+      "type": "bark",
+      "name": "我的 iPhone",
+      "enabled": true,
+      "config": {
+        "server": "https://api.day.app",
+        "deviceKey": "替换成你自己的设备Key",
+        "group": "通知转发",
+        "icon": "",
+        "sound": "",
+        "level": "active"
+      }
+    },
+    {
+      "id": "dingtalk-example",
+      "type": "dingtalk",
+      "name": "团队群",
+      "enabled": false,
+      "config": {
+        "token": "替换成access_token",
+        "secret": ""
+      }
+    }
+  ],
+  "apps": [
+    {
+      "id": "wechat-example",
+      "name": "微信",
+      "icon": "💬",
+      "enabled": true,
+      "channelIds": ["bark-example"],
+      "keywords": { "include": [], "exclude": [] }
+    },
+    {
+      "id": "sms-example",
+      "name": "短信",
+      "icon": "✉️",
+      "enabled": true,
+      "channelIds": [],
+      "keywords": { "include": ["验证码"], "exclude": [] }
+    }
+  ],
+  "rules": {
+    "master": true,
+    "quietHours": { "enabled": true, "start": "23:00", "end": "07:00" },
+    "dedupeSeconds": 30,
+    "ratePerMinute": 20,
+    "titleTemplate": "{{app}}",
+    "bodyTemplate": "{{title}} {{body}}"
+  },
+  "logs": [],
+  "settings": { "theme": "system" }
+}
