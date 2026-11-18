@@ -1,0 +1,38 @@
+# 构建产物
+.build/
+build/
+DerivedData/
+*.o
+*.app
+*.ipa
+*.dSYM.zip
+
+# 依赖
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+.yarn/
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.xccheckout
+
+# macOS
+.DS_Store
+
+# 配置（含明文密钥，切勿提交）
+notify-relay-config.json
+*.local.json
+.env
+.env.*
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

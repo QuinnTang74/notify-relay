@@ -1,0 +1,18 @@
+{
+  "name": {
+    "zh-Hans": "通知转发",
+    "zh-Hant": "通知轉發",
+    "en": "Notify Relay",
+    "ja": "通知転送",
+    "ko": "알림 전달"
+  },
+  "icon": "🔔",
+  "color": "#5E5CE6",
+  "description": {
+    "zh-Hans": "选择应用通知，通过 Bark 等渠道转发到其他设备",
+    "zh-Hant": "選擇應用通知，透過 Bark 等渠道轉發到其他設備",
+    "en": "Forward selected app notifications to your other devices via Bark and more",
+    "ja": "Bark などで選択したアプリ通知を他のデバイスへ転送",
+    "ko": "선택한 앱 알림을 Bark 등으로 다른 기기에 전달"
+  }
+}
